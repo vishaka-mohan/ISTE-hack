@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/3808de5cb1.js" crossorigin="anonymous"></script>
+    <!--Font-->
+    <link href="https://api.fontshare.com/css?f[]=general-sans@1&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>DeepStudy</title>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader">
+            <img src="../static/img/logo-light.svg" alt="deep study" class="loader-img">
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="navbar-nav">
+            <span class="brand">
+                <a href="./landing.html">
+                    <img src="../static/img/logo.svg" alt="" class="logo-small">
+                </a>
+
+            </span>
+            <ul>
+                <li>
+                    <a href="{{ url_for('logout') }}">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <section id="form">
+        <div class="container" >
+            <h2>Welcome {{current_user.username}}</h2>
+            <h1>DeepStudy</h1>
+            
+            <form method="POST"  action="{{ url_for('home') }}" enctype="multipart/form-data">
+                <textarea name="text" rows="5" >{{ocr_text}}</textarea>
+                <div><input type='file' name='file1' id="fileuplaod" accept="image/*"  /></div>
+                
+                <div>
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <div class="navbar-nav footer-nav">
+            <span class="brand">
+                <a href="./landing.html">
+                    <img src="../static/img/logo-light.svg" alt="" class="logo-small">
+                </a>
+            </span>
+            <ul>
+                <li>
+                    <a href="https://github.com/abhishek0405/DeepStudy">GitHub</a>
+                </li>
+                <li>
+                    <a href="#">Developers</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

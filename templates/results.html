@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/3808de5cb1.js" crossorigin="anonymous"></script>
+    <!--Font-->
+    <link href="https://api.fontshare.com/css?f[]=general-sans@1&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>DeepStudy</title>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader">
+            <img src="../static/img/logo-light.svg" alt="deep study" class="loader-img">
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="navbar-nav">
+            <span class="brand">
+                <a href="./landing.html">
+                    <img src="../static/img/logo.svg" alt="" class="logo-small">
+                </a>
+
+            </span>
+            <ul>
+                <li>
+                    <a href="./signin.html">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="form">
+        <div class="container" >
+            <h1>Results</h1>
+
+            <div class="accord">
+                <div class="accord-head">
+                    <p class="accord-head-text">    
+                        Quick Summary
+                    </p>
+                    <div class="chevron-down">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="accord-expand hide">
+                    <p class="accord-body-text">
+                        
+                        {{summary}}
+                    </p>
+                </div>
+            </div>
+            <div class="accord">
+                <div class="accord-head">
+                    <p class="accord-head-text">    
+                        Keyword Extraction
+                    </p>
+                    <div class="chevron-down">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="accord-expand hide">
+                    {% for item in keywords %}
+                    <p class="accord-body-text">
+                        {{item}}
+                    </p>
+                    {% endfor %}
+                    <h2>Chemical formulas</h2>
+                    {% for item in chemical_formula %} 
+                    <p class="accord-body-text">
+                        {{item}}
+                    </p>
+                    {% endfor %} 
+                </div>
+            </div>
+            <div class="accord">
+                <div class="accord-head">
+                    <p class="accord-head-text">    
+                        Formula Extraction
+                    </p>
+                    <div class="chevron-down">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="accord-expand hide">
+
+                    <h2>Scientific Formulas</h2>
+                    {% for item in scientific_formulas %} 
+                    <p class="accord-body-text">
+                        {{item}}
+                    </p>
+                    {% endfor %} 
+                   
+                </div>
+            </div>
+           
+          
+            <div class="accord">
+                <div class="accord-head">
+                    <p class="accord-head-text">    
+                        Smart Learning
+                    </p>
+                    <div class="chevron-down">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="accord-expand ">
+                    <h2>One Word Answer</h2>
+                    {% for item in one_word_ans %} 
+                    <div class="question">
+                        <p class="question-q">
+                            {{item[0]}}
+                        </p>
+                        <p class="question-expand expanded">
+                            Answer
+                        </p>
+                    </div>
+                    <p class="answer hide">
+                       {{item[1]}}
+                    </p>
+                    {% endfor %} 
+
+                  
+
+                    <h2>Short Answer</h2>
+                    {% for item in short_answers %} 
+                    <div class="question">
+                       
+                        <p class="question-q">
+                            {{item.question}}
+                        </p>
+                        <p class="question-expand expanded">
+                            Answer
+                        </p>
+                    </div>
+                    <p class="answer hide">
+                        {{item.answer}}
+                    </p>
+                    {% endfor %} 
+                    
+                </div>
+            </div>
+          
+            <a href="../test.pdf" download>Download pdf</a>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <div class="navbar-nav footer-nav">
+            <span class="brand">
+                <a href="./landing.html">
+                    <img src="../static/img/logo-light.svg" alt="" class="logo-small">
+                </a>
+            </span>
+            <ul>
+                <li>
+                    <a href="https://github.com/abhishek0405/DeepStudy">GitHub</a>
+                </li>
+                <li>
+                    <a href="#">Developers</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>
