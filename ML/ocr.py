@@ -12,9 +12,10 @@ def readText():
     directory = pathlib.Path.cwd()
     p_name = (os.path.join(directory, "images/test.png"))
 
-
-    text=image_to_string(Image.open(p_name))
-
+    test = Image.open(p_name)
+    text=image_to_string(test)
+    print(text)
+    
     print(text)
     return text
 

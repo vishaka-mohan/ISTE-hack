@@ -157,7 +157,7 @@ def home():
             one_word_ans=Question_Answer.GetQuestionAnswer(text)
             short_answers = Question_Answer.short_question_generation(text)
             summary = FormulaExtract.summary(text)
-            #pdf_gen.generate_pdf(summary, scientific_formulas, chemical_formula, one_word_ans, keywords)
+            pdf_gen.generate_pdf(summary, scientific_formulas, chemical_formula, one_word_ans, keywords)
             return render_template('results.html',one_word_ans=one_word_ans,short_answers = short_answers,keywords=keywords,chemical_formula=chemical_formula,scientific_formulas=scientific_formulas, summary=summary)
             #return render_template('results.html',one_word_ans='',short_answers = '',keywords='',chemical_formula='',scientific_formulas='', summary=text)
     else:

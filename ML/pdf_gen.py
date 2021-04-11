@@ -9,7 +9,7 @@ def generate_pdf(summary, scientific_formulas, chemical_formula, one_word_ans, k
     
     
     pdf.set_font("Arial", 'B', size = 18)
-    pdf.image('../static/img/logopdf.jpg',100,0,20,20)
+    #pdf.image('../static/img/logopdf.jpg',100,0,20,20)
     pdf.cell(200, 10, txt = "", 
             ln = 1, align = 'C')
     pdf.cell(200, 10, txt = "", 
