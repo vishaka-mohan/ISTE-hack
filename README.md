@@ -27,7 +27,7 @@ We hope to improve the performance of the summarization and the question-answer 
 
 ### How to run it
 - [x] Clone the repository to your local directory
- - `git clone https://github.com/abhishek0405/DeepStudy.git`
+ - `git clone https://github.com/vishaka-mohan/ISTE-hack.git`
  
 - [x] Activate your virtual environment. Follow steps in this link to create your virtual environment : <a href=https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/>Click here</a>
 
@@ -35,8 +35,8 @@ We hope to improve the performance of the summarization and the question-answer 
  - `virtualenv env`
  - `env\Scripts\activate`
 
-- [x] Install packages from requirements.txt
-- ` pip install -r requirements.txt `
+- [x] Install packages from req.txt
+- ` pip install -r req.txt `
 
 - [x] Run app.py file 
 - ` python app.py `
@@ -61,19 +61,19 @@ Now you can see our app running on 127.0.0.1:5000! Register with an account and 
 ### Website screenshots
 <br>
 Landing page
-<p  align="center"><img height= "600" width = "400" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Home.PNG"></p>
+<p  align="center"><img height= "600" width = "700" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Home.PNG"></p>
 <br>
 Login page
-<p  align="center"><img height= "600" width = "400" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Login.PNG"></p>
+<p  align="center"><img height= "600" width = "700" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Login.PNG"></p>
 <br>
 Input text or upload image
-<p  align="center"><img height= "600" width = "400" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Upload%20Form.PNG"></p>
+<p  align="center"><img height= "600" width = "700" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Upload%20Form.PNG"></p>
 <br>
 Quick summary
-<p  align="center"><img height= "600" width = "400" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Summary_Output.PNG"></p>
+<p  align="center"><img height= "600" width = "700" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Summary_Output.PNG"></p>
 <br>
 Smart practice
-<p  align="center"><img height= "600" width = "400" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Summary_Output.PNG"></p>
+<p  align="center"><img height= "600" width = "700" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/Summary_Output.PNG"></p>
 <br>
 Pdf download
 <p  align="center"><img height= "600" width = "400" src = "https://github.com/abhishek0405/DeepStudy/blob/main/Screenshots/pdf_output.PNG"></p>
@@ -82,7 +82,6 @@ Pdf download
 
 ### Team 
 - [Abhishek Anantharam](https://github.com/abhishek0405) 
-- [Gurnehmat Kaur Dhindsa](https://github.com/gkdhindsa)
 - [Vishaka Mohan](https://github.com/vishaka-mohan)
 
 
